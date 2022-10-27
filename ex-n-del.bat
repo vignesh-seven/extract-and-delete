@@ -17,5 +17,14 @@ echo File given: %filepath%
 
 "C:\Program Files\7-Zip\7z.exe" x %filepath% -o%basename%
 
+if %ERRORLEVEL% NEQ 0 GOTO :ERRORMSG
+
 del %filepath%
 
+exit
+
+:ERRORMSG
+
+echo There was an error unpacking the file
+
+pause
