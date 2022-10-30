@@ -2,14 +2,14 @@
 
 set filepath=%1
 
-@REM for /F "delims=" %%i in (%filepath%) do set dirname="%%~dpi" 
-@REM for /F "delims=" %%i in (%filepath%) do set filename="%%~nxi"
+for /F "delims=" %%i in (%filepath%) do set dirname="%%~dpi" 
+for /F "delims=" %%i in (%filepath%) do set filename="%%~nxi"
 for /F "delims=" %%i in (%filepath%) do set basename="%%~ni"
 
-@REM echo %filepath%
-@REM echo %dirname%
-@REM echo %filename%
-@REM echo %basename%
+echo %filepath%
+echo %dirname%
+echo %filename%
+echo %basename%
 
 mkdir %basename%
 
