@@ -5,8 +5,8 @@ Note: 7-Zip must be installed (64-bit) for this to work
 
 ## Installation  
 For the default installation:
- - Download the ex-n-del.bat file and copy it's path (Right-Click -> Copy as Path)
- - Run the below command in Command Prompt as Admin (DO NOT use Powershell).  
+ - Download the ex-n-del.bat file and copy it's path  
+ - Run the below command in Command Prompt as Admin (DO NOT use Powershell)  
 
 ```  
 reg add HKEY_CURRENT_USER\Software\Classes\*\shell\Extract and Delete\command /ve /d "PATH_TO_BAT_FILE \"%1\"" /f  
